@@ -42,7 +42,7 @@ namespace WSECUFramework.Tests
         public void Initialize()
         {
             //Select Browser here
-            driver = Browsers.SelectBrowser("Chrome"); //Chrome,Firefox,Edge
+            driver = Browsers.SelectBrowser("Chrome"); //Chrome,Firefox
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
             test = extent.CreateTest(TestContext.CurrentContext.Test.Name);
         }
